@@ -48,7 +48,7 @@ const Letter = () => {
             }}
             options={{
               autoStart: true,
-              delay: 0,
+              delay: 40,
             }}
           />
         </div>
