@@ -7,10 +7,10 @@ function App() {
   return (
     <Reveal>
       <div className="relative h-screen bg-[url(./assets/bgg.png)] bg-bottom bg-cover">
-        <div className="h-full flex items-end justify-start pl-[5rem]">
+        <div className="h-full flex items-end lg:justify-start justify-center pl-[2rem] xl:pl-[5rem]">
           <motion.div
             animate={{ y: -50, transition: { duration: 2 } }}
-            className="h-[250px] w-[400px] bg-[url(./assets/envelope.png)] bg-cover bg-no-repeat flex items-center justify-center rounded-[10px]"
+            className="h-[120px] w-[230px] lg:h-[190px] lg:w-[340px]  xl:h-[220px] xl:w-[370px] bg-[url(./assets/envelope.png)] bg-cover bg-no-repeat flex items-center justify-center rounded-[10px]"
           >
             <a
               href="/letter"

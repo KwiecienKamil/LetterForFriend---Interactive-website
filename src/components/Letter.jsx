@@ -4,19 +4,13 @@ import Reveal from "../Reveal";
 import Typewriter from "typewriter-effect";
 
 const Letter = () => {
-  const [letterContent, setLetterContent] = useState("");
-
-  const addContent = (text) => {
-    setLetterContent((prevContent) => prevContent + text);
-  };
-
   return (
     <Reveal>
       <div className="h-screen w-full flex justify-center items-center bg-gradient-to-r from-gradient1 to-gradient2 text-sm font-gummy">
-        <div className="relative w-[60%] h-[95%] bg-white px-[2%] py-[2%] text-wrap rounded-xl">
+        <div className="relative w-[90%] sm:w-[75%] md:w-[60%] h-[95%] bg-white px-[2%] py-[2%] text-wrap rounded-xl overflow-y-auto">
           <a
             href="/"
-            className="absolute -top-3 -right-3 bg-red-500 text-white text-xl rounded-md px-1 py-1"
+            className="absolute top-2 right-2 bg-red-500 text-white text-xl rounded-md px-1 py-1 z-10"
           >
             <span className="font-bold">
               <CgClose />
@@ -54,14 +48,8 @@ const Letter = () => {
             }}
             options={{
               autoStart: true,
-              delay: 60,
+              delay: 0,
             }}
-          />
-
-          {/* Display the letter content */}
-          <div
-            className="mt-4"
-            dangerouslySetInnerHTML={{ __html: letterContent }}
           />
         </div>
       </div>
